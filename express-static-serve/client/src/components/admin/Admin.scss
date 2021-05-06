@@ -1,0 +1,16 @@
+.admin-page-main-container {
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    color: black;
+    background-color: white;
+    padding: 30px;
+    border-radius: 5px;
+    width: 400px;
+    overflow-y: scroll;;
+    .mailing-list-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

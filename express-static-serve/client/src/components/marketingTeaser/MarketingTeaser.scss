@@ -1,0 +1,128 @@
+@import '../../css/variables';
+
+.marketing-teaser-main-container {
+    height: 100%;
+    width: 100%;
+    .hanna-logo {
+        width: 35vw;
+        margin: 100px 0 0 100px;
+    }
+    .email-section {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 200px;
+        right: 200px;
+        .header {
+            color: white;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .input-section {
+            margin: 10px 0 0 3px;
+            .MuiInputLabel-formControl {
+                color: white;
+                opacity: 0.8;
+            }
+            .MuiInputBase-root {
+                border-bottom: 1px solid white;
+                width: 400px;
+            }
+            .MuiInputBase-input {
+                color: white;
+            }
+            .MuiInput-underline {
+                &:after {
+                    border-bottom: 1px solid white;
+                }
+            }
+            .MuiButton-containedPrimary {
+                padding: 8px 30px;
+                background-color: $color-hanna-main;
+                border-radius: 3px;
+                font-weight: bold;
+                text-transform: capitalize;
+                font-size: 15px;
+                margin: 8px 0 0 20px;
+            }
+        }
+        .invalid-email-msg {
+            margin-top: 5px;
+            color: red;
+        }
+        .success-msg {
+            margin-top: 5px;
+            color: rgb(0, 206, 0);
+        }
+        .coming-soon {
+            color: $color-hanna-main;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 20px 0 0 424px;
+            &.hasMsg {
+                margin-top: -3px;
+            }
+        }
+    }
+    &.isMobile {
+        .hanna-logo {
+            width: 35vw;
+            margin: 100px 0 0 100px;
+        }
+        .email-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            bottom: 200px;
+            right: 10px;
+            left: 10px;
+            .header {
+                color: white;
+                font-size: 18px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .input-section {
+                margin: 10px 0 0 3px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .MuiInputLabel-formControl {
+                    color: white;
+                    opacity: 0.8;
+                    font-size: 12px;
+                }
+                .MuiInputBase-root {
+                    border-bottom: 1px solid white;
+                    width: 245px;
+                }
+                .MuiInputBase-input {
+                    color: white;
+                    font-size: 12px;
+                }
+                .MuiInput-underline {
+                    &:after {
+                        border-bottom: 1px solid white;
+                    }
+                }
+                .MuiButton-containedPrimary {
+                    padding: 8px 30px;
+                    background-color: $color-hanna-main;
+                    border-radius: 3px;
+                    font-weight: bold;
+                    text-transform: capitalize;
+                    font-size: 15px;
+                    margin: 30px 0 0 0;
+                    width: 120px;
+                }
+            }
+            .coming-soon {
+                color: $color-hanna-main;
+                font-weight: bold;
+                font-size: 16px;
+                margin: 30px 0 0 0;
+            }
+        }
+    }
+}
